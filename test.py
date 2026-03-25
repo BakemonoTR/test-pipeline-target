@@ -1,7 +1,8 @@
 import subprocess
+import os
 
-API_KEY = "sk-1234567890abcdef"
-password = "supersecret123"
+API_KEY = os.environ.get('API_KEY')
+password = os.environ.get('PASSWORD')
 
 def get_user(user_id):
     query = "SELECT * FROM users WHERE id = " + user_id
@@ -16,6 +17,6 @@ def find_duplicates(items):
     return duplicates
 
 def a(x, y):
-    return x+y
+    return x+y 
 
     # test change
