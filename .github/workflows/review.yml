@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: BakemonoTR/Argus@v1.6
+      - uses: BakemonoTR/Argus@v1.7
         with:
           groq_api_key: ${{ secrets.GROQ_API_KEY }}
           language: 'tr'
